@@ -45,7 +45,6 @@ body {
 	}
 }
 
-
 #write>h1:first-child,
 h1 {
 	margin-top: 1.6em;
@@ -109,14 +108,6 @@ pre {
 	font-size: .9em;
 	background: white;
 }
-.md-fences{
-	margin-left: 1em;
-	padding-left: 1em;
-	border: 1px solid #ddd;
-	padding-bottom: 8px;
-	padding-top: 6px;
-	margin-bottom: 1.5em;
-}
 a {
 	color: #2484c1;
 	text-decoration: none;
@@ -140,10 +131,6 @@ hr {
 	border-bottom: none;
 	border-left: 0;
 	border-right: 0;
-}
-.ty-table-edit {
-	background: #ededed;
-    padding-top: 4px;
 }
 table {
 	margin-bottom: 1.333333rem
