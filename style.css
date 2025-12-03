@@ -25,19 +25,23 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1170px) {
   html {
 	font-size: 19px;
-    width: 77%;
+    width: 80%;
   }
 }
 @media screen and (min-width: 1171px) {
   html {
 	font-size: 19px;
-    width: 65%;
+    width: 70%;
   }
 }
 @media only screen and (min-width: 1400px) {
 	#write {
 		max-width: 1100px;
 	}
+	html {
+	  font-size: 19px;
+      width: 60%;
+  }
 }
 @media print {
 	html {
