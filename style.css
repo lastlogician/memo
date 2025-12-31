@@ -112,10 +112,10 @@ pre {
 	background: white;
 }
 a {
-	color: #2484c1;
-	text-decoration: none;
+	text-decoration: underline;
 }
 a:hover {
+	color: #595959;
 	text-decoration: underline;
 }
 a img {
