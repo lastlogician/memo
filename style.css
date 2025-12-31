@@ -116,7 +116,7 @@ a {
 	text-decoration: underline;
 }
 a:hover {
-	color: #333;
+	color: #595959;
 	text-decoration: underline;
 }
 a img {
@@ -124,7 +124,7 @@ a img {
 }
 h1 a,
 h1 a:hover {
-	color: #333;
+	color: #595959;
 	text-decoration: none;
 }
 hr {
