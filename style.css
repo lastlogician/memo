@@ -112,6 +112,7 @@ pre {
 	background: white;
 }
 a {
+	color: #000000;
 	text-decoration: underline;
 }
 a:hover {
