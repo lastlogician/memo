@@ -110,7 +110,7 @@ ul li,ol li {
 		padding-left: 40px;
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1170px) {
     li > ul, li > ol, ul ul, ol ol, ul ol, ol ul {
         padding-left: 0;
         list-style: none;
