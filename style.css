@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap');
 html, body {
 	margin: auto;
 	background: #fefefe;
@@ -11,11 +12,13 @@ body {
         Times,
         /* 中文字体 */
         "Source Han Serif CN",
+		"Noto Serif SC",
 		"Songti SC",
         "方正书宋",
         "SimSun",
         /* 日语字体 */
         "Noto Serif CJK JP",
+		"Noto Serif JP",
         "Yu Mincho";
 	color: #333;
 	line-height: 1.4;
