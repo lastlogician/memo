@@ -6,8 +6,8 @@ html, body {
 body {
 	font-family: 
         /* 英语字体 */
-        "Vollkorn",
         Palatino,
+		Vollkorn,
         Times,
         /* 中文字体 */
         "Source Han Serif CN",
@@ -15,7 +15,6 @@ body {
         /* 日语字体 */
         "Noto Serif CJK JP",
         "Yu Mincho",
-        "Hiragino Mincho ProN",
 	color: #333;
 	line-height: 1.4;
 	text-align: justify;
