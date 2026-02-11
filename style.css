@@ -117,7 +117,16 @@ blockquote {
 }
 code,
 pre {
-	font-family: "Consolas", "Menlo", "Monaco", monospace, serif;
+	font-family: 
+		"Consolas",
+		"Menlo",
+		"Monaco",
+		"Source Han Sans CN",
+		"Noto Sans CJK SC",
+		"Noto Sans CJK JP"
+		"Microsoft YaHei",
+		monospace,
+		serif;
 	font-size: .9em;
 	background: white;
 }
