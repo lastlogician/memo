@@ -7,14 +7,16 @@ body {
 	font-family: 
         /* 英语字体 */
         Palatino,
-		Vollkorn,
+        Vollkorn,
         Times,
         /* 中文字体 */
         "Source Han Serif CN",
         "方正书宋",
         /* 日语字体 */
         "Noto Serif CJK JP",
+        "Songti SC",
         "Yu Mincho",
+		"SimSun";
 	color: #333;
 	line-height: 1.4;
 	text-align: justify;
