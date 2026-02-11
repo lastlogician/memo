@@ -110,6 +110,12 @@ ul li,ol li {
 		padding-left: 40px;
 	}
 }
+@media screen and (max-width: 768px) {
+    li > ul, li > ol, ul ul, ol ol, ul ol, ol ul {
+        padding-left: 0;
+        list-style: none;
+  }
+}
 blockquote {
 	margin-left: 1em;
 	padding-left: 1em;
