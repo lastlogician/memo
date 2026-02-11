@@ -4,7 +4,24 @@ html, body {
 	-webkit-font-smoothing: antialiased;
 }
 body {
-	font-family: "Vollkorn", "Source Han Serif CN", "Noto Serif CJK SC", "Noto Serif CJK JP", "Yu Mincho", "Hiragino Mincho ProN", "方正书宋", "华文中宋", "STSong", "SimSun", Palatino, Times, serif;
+	font-family: 
+        /* 英语字体 */
+        "Vollkorn",
+        Palatino,
+        Times,
+        /* 中文字体 */
+        "Source Han Serif CN",
+        "Noto Serif CJK SC",
+        "方正书宋",
+        "华文中宋",
+        "STSong",
+        "SimSun",
+        /* 日语字体 */
+        "Noto Serif CJK JP",
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        /* 通用后备 */
+        serif;
 	color: #333;
 	line-height: 1.4;
 	text-align: justify;
