@@ -11,12 +11,12 @@ body {
         Times,
         /* 中文字体 */
         "Source Han Serif CN",
+		"Songti SC",
         "方正书宋",
+        "SimSun",
         /* 日语字体 */
         "Noto Serif CJK JP",
-        "Songti SC",
-        "Yu Mincho",
-		"SimSun";
+        "Yu Mincho";
 	color: #333;
 	line-height: 1.4;
 	text-align: justify;
