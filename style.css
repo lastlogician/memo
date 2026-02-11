@@ -85,8 +85,13 @@ h1+h2, h2+h3 {
 h3+h4 {
 	margin-top: 0.8em;
 }
-h4 + p,h4 + ul,h4 + ol {
+h4 + p, h4 + ul, h4 + ol {
 	margin-top: 0.3em;
+}
+@media screen and (max-width: 1170px) {
+    h1, h2, h3, h4 {
+        text-align: left;
+    }
 }
 p,
 .mathjax-block {
@@ -102,8 +107,11 @@ ul {
 ol {
 	padding-left: 1.2em;
 }
-ul li,ol li {
+ul li, ol li {
 	margin-bottom: 0.3em;
+}
+li > ul, li > ol {
+  margin-top: 0.4em;
 }
 @media print {
 	ol {
@@ -111,15 +119,21 @@ ul li,ol li {
 	}
 }
 @media screen and (max-width: 1170px) {
-    li > ul, li > ol, ul ul, ol ol, ul ol, ol ul {
+	li > ul, li > ol, ul ul, ol ol, ul ol, ol ul {
         padding-left: 0;
         list-style: none;
-  }
+    }
 }
 blockquote {
 	margin-left: 1em;
 	padding-left: 1em;
 	border-left: 1px solid #ddd;
+}
+@media screen and (max-width: 1170px) {
+    blockquote {
+        margin-left: 0.5em;
+        padding-left: 0.8em;
+    }
 }
 code,
 pre {
