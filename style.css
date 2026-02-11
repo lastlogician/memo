@@ -105,7 +105,7 @@ ol {
 	padding-left: 1.2em;
 }
 ul li,ol li {
-	margin-bottom: 0.15em;
+	margin-bottom: 0.3em;
 }
 @media print {
 	ol {
