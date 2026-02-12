@@ -138,7 +138,7 @@ blockquote {
 }
 @media screen and (max-width: 1170px) {
     blockquote {
-        margin-left: 0.5em;
+        margin-left: 0.4em;
         padding-left: 0.8em;
     }
 }
@@ -209,4 +209,12 @@ table thead:first-child tr:first-child td {
 }
 table tbody+tbody {
 	border-top: 2px solid #ddd
+}
+::selection {
+	background: #333;
+	color: #fefefe;
+}
+::-moz-selection {  /* Firefox 兼容 */
+	background: #333;
+	color: #fefefe;
 }
