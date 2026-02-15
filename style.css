@@ -32,28 +32,28 @@ body {
 	text-align: justify;
 }
 @media screen and (max-width: 768px) {
-  html {
-	font-size: 19px;
-    width: 90%;
-  }
+	html {
+		font-size: 19px;
+		width: 90%;
+	}
 }
 @media screen and (min-width: 768px) and (max-width: 1170px) {
-  html {
-	font-size: 20px;
-    width: 80%;
-  }
+	html {
+		font-size: 20px;
+		width: 80%;
+	}
 }
 @media screen and (min-width: 1171px) {
-  html {
-	font-size: 20px;
-    width: 70%;
-  }
+	html {
+		font-size: 20px;
+		width: 70%;
+	}
 }
 @media only screen and (min-width: 1400px) {
 	html {
-	  font-size: 19px;
-      width: 60%;
-  }
+		font-size: 19px;
+		width: 60%;
+	}
 }
 @media print {
 	html {
