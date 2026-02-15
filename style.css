@@ -109,15 +109,12 @@ ol {
 	padding-left: 1.2em;
 }
 ul li, ol li {
-	margin-bottom: 0.3em;
+	margin-bottom: 0.25em;
+	line-height: 1.7;
 }
 li > ul, li > ol {
-  margin-top: 0.4em;
-}
-@media print {
-	ol {
-		padding-left: 40px;
-	}
+    margin-top: 0.3em;
+	margin-bottom: 0.15em;
 }
 @media screen and (max-width: 1170px) {
 	li > ul, li > ol, ul ul, ol ol, ul ol, ol ul {
@@ -125,10 +122,30 @@ li > ul, li > ol {
         list-style: none;
     }
 }
+@media screen and (max-width: 480px) {
+	ul, ol {
+		padding-left: 0.8em;
+	}
+	li > ul, li > ol, ul ul, ol ol, ul ol, ol ul {
+		padding-left: 0.5em;
+	}
+}
+@media print {
+	ol {
+		padding-left: 40px;
+	}
+}
 blockquote {
-	margin-left: 1em;
-	padding-left: 1em;
-	border-left: 1px solid #ddd;
+	margin: 1.2em 0;
+	margin-left: 0;
+	padding: 0.6em 1.2em;
+	border-left: 3px solid #bbb;
+	color: #555;
+	background: #f8f8f8;
+	border-radius: 0 4px 4px 0;
+}
+blockquote p {
+	margin-bottom: 0;
 }
 @media screen and (max-width: 1170px) {
     blockquote {
