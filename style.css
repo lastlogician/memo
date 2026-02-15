@@ -4,7 +4,6 @@ html, body {
 	background: #fefefe;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
 }
 html {
 	scroll-behavior: smooth;
@@ -30,6 +29,7 @@ body {
 	color: #333;
 	line-height: 1.4;
 	text-align: justify;
+	padding-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
 	html {
@@ -94,6 +94,9 @@ h4 + p, h4 + ul, h4 + ol {
     h1, h2, h3, h4 {
         text-align: left;
     }
+	h1:first-child, h2:first-child {
+		margin-top: 1em;
+	}
 }
 p, .mathjax-block {
 	margin-top: 0;
