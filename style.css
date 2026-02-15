@@ -204,6 +204,13 @@ table thead:first-child tr:first-child td {
 table tbody+tbody {
 	border-top: 2px solid #ddd
 }
+ruby {
+	ruby-align: center;
+}
+ruby rt {
+	font-size: 0.65em;
+	color: #888;
+}
 ::selection {
 	background: #333;
 	color: #fefefe;
