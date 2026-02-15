@@ -3,6 +3,11 @@ html, body {
 	margin: auto;
 	background: #fefefe;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+html {
+	scroll-behavior: smooth;
 }
 body {
 	font-family: 
