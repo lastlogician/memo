@@ -128,8 +128,7 @@ li > ul, li > ol {
 blockquote {
 	margin-left: 1em;
 	padding-left: 1em;
-	border-left: 3px solid #bbb;
-	background: #f8f8f8;
+	border-left: 1px solid #ddd;
 }
 @media screen and (max-width: 1170px) {
     blockquote {
