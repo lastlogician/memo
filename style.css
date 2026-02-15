@@ -149,8 +149,8 @@ blockquote p {
 }
 @media screen and (max-width: 1170px) {
     blockquote {
-        margin-left: 0.4em;
-        padding-left: 0.8em;
+        margin-left: 0;
+		padding: 0.5em 1em;
     }
 }
 code,
