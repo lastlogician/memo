@@ -130,6 +130,7 @@ li > ul, li > ol {
     }
     li > ul, ul ul {
         padding-left: 1em;
+		list-style: square;
     }
 }
 @media print {
