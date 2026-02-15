@@ -95,12 +95,11 @@ h4 + p, h4 + ul, h4 + ol {
         text-align: left;
     }
 }
-p,
-.mathjax-block {
+p, .mathjax-block {
 	margin-top: 0;
-	-webkit-hypens: auto;
-	-moz-hypens: auto;
-	hyphens: auto;
+	-webkit-hyphens: auto;  /* 旧版 Safari/Chrome */
+    -moz-hyphens: auto;     /* 旧版 Firefox */
+    hyphens: auto;          /* 标准语法 */
 }
 ul {
 	list-style: square;
