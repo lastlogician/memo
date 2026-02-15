@@ -122,14 +122,6 @@ li > ul, li > ol {
         list-style: none;
     }
 }
-@media screen and (max-width: 480px) {
-	ul, ol {
-		padding-left: 0.8em;
-	}
-	li > ul, li > ol, ul ul, ol ol, ul ol, ol ul {
-		padding-left: 0.5em;
-	}
-}
 @media print {
 	ol {
 		padding-left: 40px;
