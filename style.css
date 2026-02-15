@@ -124,10 +124,6 @@ li > ul, li > ol {
     }
 }
 @media screen and (min-width: 1171px) {
-    ul {
-        padding-left: 0;
-        list-style: none;
-    }
     li > ul, ul ul {
         padding-left: 1em;
 		list-style: square;
