@@ -1,145 +1,450 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ellery Queen Mystery Magazine</title>
+    <title>杂志档案馆 | Magazine Archive</title>
     <link rel="stylesheet" href="style.css">
     <style>
         .archive-container {
             max-width: 100%;
             margin: 0 auto;
-            padding: 2rem 0;
+            padding: 1.5rem 0 3rem;
         }
         .archive-header {
             text-align: center;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #ddd;
+            margin-bottom: 1.5rem;
         }
         .archive-header h1 {
-            margin-top: 0;
-            font-size: 2.2em;
+            margin: 0 0 0.25rem;
+            font-size: 2em;
             color: #222;
         }
         .archive-header .subtitle {
             color: #666;
-            font-size: 0.95em;
-            margin-top: 0.5em;
-        }
-        .decade-section {
-            margin-bottom: 4rem;
-        }
-        .decade-title {
-            font-size: 1.5em;
-            color: #444;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #333;
-            display: inline-block;
+            font-size: 0.9em;
+            margin: 0;
         }
         .magazine-grid {
             display: grid;
-            gap: 2rem 1.5rem;
-            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            grid-template-columns: 1fr;
         }
         .magazine-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        .magazine-cover {
-            width: 100%;
-            aspect-ratio: 2 / 3;
-            object-fit: cover;
-            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
             border: 1px solid #ddd;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            padding: 0.75rem 0.875rem;
+            background: #fff;
         }
-        .magazine-cover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        .magazine-item:hover {
+            border-color: #999;
         }
-        .magazine-link {
-            margin-top: 0.75rem;
-            font-size: 0.85em;
-            color: #333;
+        .magazine-title {
+            font-size: 0.9em;
+            font-weight: 700;
+            margin: 0 0 0.4rem;
+            line-height: 1.3;
+        }
+        .magazine-title a {
+            color: #000;
             text-decoration: none;
-            font-weight: 600;
-            letter-spacing: 0.02em;
         }
-        .magazine-link:hover {
-            color: #666;
+        .magazine-title a:hover {
+            color: #595959;
             text-decoration: underline;
         }
-        .magazine-link.disabled {
-            color: #999;
-            cursor: default;
+        .toc-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .toc-item {
+            font-size: 0.78em;
+            line-height: 1.45;
+            padding: 0.15rem 0;
+            border-bottom: 1px dotted #e0e0e0;
+        }
+        .toc-item:last-child {
+            border-bottom: none;
+        }
+        .toc-item a {
+            color: #444;
             text-decoration: none;
         }
-        .magazine-link.disabled:hover {
-            text-decoration: none;
+        .toc-item a:hover {
+            color: #000;
+            text-decoration: underline;
         }
-        @media screen and (min-width: 600px) {
+        @media (min-width: 480px) {
+            .magazine-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 768px) {
             .magazine-grid {
                 grid-template-columns: repeat(3, 1fr);
-                gap: 2.5rem 1.5rem;
+            }
+            .archive-header .subtitle {
+                text-align: center;
             }
         }
-        @media screen and (min-width: 900px) {
+        @media (min-width: 1100px) {
             .magazine-grid {
                 grid-template-columns: repeat(4, 1fr);
-                gap: 3rem 2rem;
-            }
-            .magazine-link {
-                font-size: 0.9em;
             }
         }
-        @media screen and (min-width: 1200px) {
+        @media (min-width: 1400px) {
             .magazine-grid {
                 grid-template-columns: repeat(5, 1fr);
-                gap: 3rem 2rem;
             }
         }
-        @media screen and (min-width: 1500px) {
+        @media (min-width: 1700px) {
             .magazine-grid {
                 grid-template-columns: repeat(6, 1fr);
-                gap: 3.5rem 2rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .archive-header .subtitle {
+                text-align: left;
             }
         }
     </style>
+    <base target="_blank">
 </head>
 
 <body>
     <div class="archive-container">
         <header class="archive-header">
-            <h1>Ellery Queen Mystery Magazine</h1>
+            <h1>推理杂志档案馆</h1>
             <p class="subtitle">MYSTERY MAGAZINE ARCHIVE</p>
         </header>
-        <section class="decade-section">
-            <h2 class="decade-title">1941</h2>
-            <div class="magazine-grid">
-                <div class="magazine-item">
-                    <a href="./EQMM-1941.html">
-                        <img src="https://i.postimg.cc/NGm1vzD8/EQMM-1941-3.jpg" alt="EQMM-1941-Fall" class="magazine-cover">
-                    </a>
-                    <a href="./EQMM-1941.html" class="magazine-link">FALL 1941</a>
-                </div>
+
+        <div class="magazine-grid">
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1941-fall.pdf">推理杂志 · 1941年秋季刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1941-fall-01.html">埃勒里·奎因：神秘事件</a></li>
+                    <li class="toc-item"><a href="articles/1941-fall-02.html">约翰·狄克森·卡尔：密室之谜</a></li>
+                    <li class="toc-item"><a href="articles/1941-fall-03.html">阿加莎·克里斯蒂：失踪的遗嘱</a></li>
+                    <li class="toc-item"><a href="articles/1941-fall-04.html">编辑手记</a></li>
+                </ul>
             </div>
-        </section>
-        <section class="decade-section">
-            <h2 class="decade-title">1942</h2>
-            <div class="magazine-grid">
-                <div class="magazine-item">
-                    <a href="./EQMM-1942.html#eqmm-spring-1942">
-                        <img src="https://i.postimg.cc/L6vgHK1q/EQMM-1942-1.jpg" alt="EQMM-1942-Spring" class="magazine-cover">
-                    </a>
-                    <a href="./EQMM-1942.html#eqmm-spring-1942" class="magazine-link">SPRING 1942</a>
-                </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1942-winter.pdf">推理杂志 · 1942年冬季刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1942-winter-01.html">达希尔·哈米特：血色收获</a></li>
+                    <li class="toc-item"><a href="articles/1942-winter-02.html">雷蒙德·钱德勒：长眠不醒</a></li>
+                    <li class="toc-item"><a href="articles/1942-winter-03.html">读者来信</a></li>
+                </ul>
             </div>
-        </section>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1942-spring.pdf">推理杂志 · 1942年春季刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1942-spring-01.html">埃勒里·奎因：希腊棺材之谜</a></li>
+                    <li class="toc-item"><a href="articles/1942-spring-02.html">多萝西·L·塞耶斯：九个裁缝</a></li>
+                    <li class="toc-item"><a href="articles/1942-spring-03.html">新书架</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1942-may.pdf">推理杂志 · 1942年5月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1942-may-01.html">范·达因：金丝雀杀人事件</a></li>
+                    <li class="toc-item"><a href="articles/1942-may-02.html">S·S·范·达因：主教谋杀案</a></li>
+                    <li class="toc-item"><a href="articles/1942-may-03.html">推理小说评论</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1942-july.pdf">推理杂志 · 1942年7月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1942-july-01.html">阿加莎·克里斯蒂：东方快车谋杀案</a></li>
+                    <li class="toc-item"><a href="articles/1942-july-02.html">G·K·切斯特顿：布朗神父探案</a></li>
+                    <li class="toc-item"><a href="articles/1942-july-03.html">推理谜题</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1942-sept.pdf">推理杂志 · 1942年9月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1942-sept-01.html">埃勒里·奎因：埃及十字架之谜</a></li>
+                    <li class="toc-item"><a href="articles/1942-sept-02.html">约翰·狄克森·卡尔：三口棺材</a></li>
+                    <li class="toc-item"><a href="articles/1942-sept-03.html">短篇：午夜电话</a></li>
+                    <li class="toc-item"><a href="articles/1942-sept-04.html">新书预告</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1942-nov.pdf">推理杂志 · 1942年11月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1942-nov-01.html">雷蒙德·钱德勒：高窗</a></li>
+                    <li class="toc-item"><a href="articles/1942-nov-02.html">达希尔·哈米特：马耳他之鹰</a></li>
+                    <li class="toc-item"><a href="articles/1942-nov-03.html">编辑选择</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1943-jan.pdf">推理杂志 · 1943年1月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1943-jan-01.html">埃勒里·奎因：中国橘子之谜</a></li>
+                    <li class="toc-item"><a href="articles/1943-jan-02.html">阿加莎·克里斯蒂：ABC谋杀案</a></li>
+                    <li class="toc-item"><a href="articles/1943-jan-03.html">年度推理小说评选</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1943-march.pdf">推理杂志 · 1943年3月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1943-march-01.html">约翰·狄克森·卡尔：燃烧的法庭</a></li>
+                    <li class="toc-item"><a href="articles/1943-march-02.html">多萝西·L·塞耶斯：剧毒</a></li>
+                    <li class="toc-item"><a href="articles/1943-march-03.html">读者调查</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1943-may.pdf">推理杂志 · 1943年5月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1943-may-01.html">范·达因：格林家杀人事件</a></li>
+                    <li class="toc-item"><a href="articles/1943-may-02.html">短篇：消失的子弹</a></li>
+                    <li class="toc-item"><a href="articles/1943-may-03.html">推理小说发展史</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1943-july.pdf">推理杂志 · 1943年7月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1943-july-01.html">阿加莎·克里斯蒂：尼罗河上的惨案</a></li>
+                    <li class="toc-item"><a href="articles/1943-july-02.html">G·K·切斯特顿：奇职怪业俱乐部</a></li>
+                    <li class="toc-item"><a href="articles/1943-july-03.html">新作者介绍</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1943-sept.pdf">推理杂志 · 1943年9月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1943-sept-01.html">埃勒里·奎因：西班牙披肩之谜</a></li>
+                    <li class="toc-item"><a href="articles/1943-sept-02.html">约翰·狄克森·卡尔：犹大之窗</a></li>
+                    <li class="toc-item"><a href="articles/1943-sept-03.html">书评专栏</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1944-jan.pdf">推理杂志 · 1944年1月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1944-jan-01.html">雷蒙德·钱德勒：湖底女人</a></li>
+                    <li class="toc-item"><a href="articles/1944-jan-02.html">达希尔·哈米特：玻璃钥匙</a></li>
+                    <li class="toc-item"><a href="articles/1944-jan-03.html">编辑手记</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1944-march.pdf">推理杂志 · 1944年3月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1944-march-01.html">阿加莎·克里斯蒂：阳光下的罪恶</a></li>
+                    <li class="toc-item"><a href="articles/1944-march-02.html">多萝西·L·塞耶斯：杀人广告</a></li>
+                    <li class="toc-item"><a href="articles/1944-march-03.html">短篇：最后的线索</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1944-may.pdf">推理杂志 · 1944年5月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1944-may-01.html">埃勒里·奎因：半途之屋</a></li>
+                    <li class="toc-item"><a href="articles/1944-may-02.html">约翰·狄克森·卡尔：失颤之人</a></li>
+                    <li class="toc-item"><a href="articles/1944-may-03.html">推理小说评论</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1944-july.pdf">推理杂志 · 1944年7月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1944-july-01.html">范·达因：班森杀人事件</a></li>
+                    <li class="toc-item"><a href="articles/1944-july-02.html">短篇：密室逃脱</a></li>
+                    <li class="toc-item"><a href="articles/1944-july-03.html">读者来信</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1944-sept.pdf">推理杂志 · 1944年9月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1944-sept-01.html">阿加莎·克里斯蒂：五只小猪</a></li>
+                    <li class="toc-item"><a href="articles/1944-sept-02.html">G·K·切斯特顿：隐身人</a></li>
+                    <li class="toc-item"><a href="articles/1944-sept-03.html">新书架</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1944-nov.pdf">推理杂志 · 1944年11月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1944-nov-01.html">埃勒里·奎因：生死之门</a></li>
+                    <li class="toc-item"><a href="articles/1944-nov-02.html">约翰·狄克森·卡尔：连续自杀事件</a></li>
+                    <li class="toc-item"><a href="articles/1944-nov-03.html">年度回顾</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1945-jan.pdf">推理杂志 · 1945年1月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1945-jan-01.html">雷蒙德·钱德勒：小妹妹</a></li>
+                    <li class="toc-item"><a href="articles/1945-jan-02.html">达希尔·哈米特：瘦子</a></li>
+                    <li class="toc-item"><a href="articles/1945-jan-03.html">编辑选择</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1945-march.pdf">推理杂志 · 1945年3月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1945-march-01.html">阿加莎·克里斯蒂：零时</a></li>
+                    <li class="toc-item"><a href="articles/1945-march-02.html">多萝西·L·塞耶斯：巴士司机的蜜月</a></li>
+                    <li class="toc-item"><a href="articles/1945-march-03.html">推理谜题</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1945-may.pdf">推理杂志 · 1945年5月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1945-may-01.html">埃勒里·奎因：灾难之城</a></li>
+                    <li class="toc-item"><a href="articles/1945-may-02.html">约翰·狄克森·卡尔：至死不渝</a></li>
+                    <li class="toc-item"><a href="articles/1945-may-03.html">新书预告</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1945-july.pdf">推理杂志 · 1945年7月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1945-july-01.html">范·达因：狗园杀人事件</a></li>
+                    <li class="toc-item"><a href="articles/1945-july-02.html">短篇：最后一案</a></li>
+                    <li class="toc-item"><a href="articles/1945-july-03.html">作者访谈</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1945-sept.pdf">推理杂志 · 1945年9月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1945-sept-01.html">阿加莎·克里斯蒂：帷幕</a></li>
+                    <li class="toc-item"><a href="articles/1945-sept-02.html">G·K·切斯特顿：蓝宝石十字架</a></li>
+                    <li class="toc-item"><a href="articles/1945-sept-03.html">书评专栏</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1945-nov.pdf">推理杂志 · 1945年11月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1945-nov-01.html">埃勒里·奎因：凶手是警察</a></li>
+                    <li class="toc-item"><a href="articles/1945-nov-02.html">约翰·狄克森·卡尔：耳语之人</a></li>
+                    <li class="toc-item"><a href="articles/1945-nov-03.html">读者调查</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1946-jan.pdf">推理杂志 · 1946年1月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1946-jan-01.html">雷蒙德·钱德勒：播放谋杀</a></li>
+                    <li class="toc-item"><a href="articles/1946-jan-02.html">达希尔·哈米特：红色收获</a></li>
+                    <li class="toc-item"><a href="articles/1946-jan-03.html">编辑手记</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1946-march.pdf">推理杂志 · 1946年3月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1946-march-01.html">阿加莎·克里斯蒂：捕鼠器</a></li>
+                    <li class="toc-item"><a href="articles/1946-march-02.html">多萝西·L·塞耶斯：证言疑云</a></li>
+                    <li class="toc-item"><a href="articles/1946-march-03.html">短篇：午夜钟声</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1946-may.pdf">推理杂志 · 1946年5月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1946-may-01.html">埃勒里·奎因：十日惊奇</a></li>
+                    <li class="toc-item"><a href="articles/1946-may-02.html">约翰·狄克森·卡尔：爬虫馆杀人事件</a></li>
+                    <li class="toc-item"><a href="articles/1946-may-03.html">推理小说评论</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1946-july.pdf">推理杂志 · 1946年7月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1946-july-01.html">范·达因：金丝雀杀人事件</a></li>
+                    <li class="toc-item"><a href="articles/1946-july-02.html">短篇：消失的证人</a></li>
+                    <li class="toc-item"><a href="articles/1946-july-03.html">读者来信</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1946-sept.pdf">推理杂志 · 1946年9月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1946-sept-01.html">阿加莎·克里斯蒂：葬礼之后</a></li>
+                    <li class="toc-item"><a href="articles/1946-sept-02.html">G·K·切斯特顿：花园血案</a></li>
+                    <li class="toc-item"><a href="articles/1946-sept-03.html">新书架</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1946-nov.pdf">推理杂志 · 1946年11月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1946-nov-01.html">埃勒里·奎因：九尾怪猫</a></li>
+                    <li class="toc-item"><a href="articles/1946-nov-02.html">约翰·狄克森·卡尔：孔雀羽毛谋杀案</a></li>
+                    <li class="toc-item"><a href="articles/1946-nov-03.html">年度回顾</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1947-jan.pdf">推理杂志 · 1947年1月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1947-jan-01.html">雷蒙德·钱德勒：漫长的告别</a></li>
+                    <li class="toc-item"><a href="articles/1947-jan-02.html">达希尔·哈米特：丹恩家的诅咒</a></li>
+                    <li class="toc-item"><a href="articles/1947-jan-03.html">编辑选择</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1947-march.pdf">推理杂志 · 1947年3月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1947-march-01.html">阿加莎·克里斯蒂：奉命谋杀</a></li>
+                    <li class="toc-item"><a href="articles/1947-march-02.html">多萝西·L·塞耶斯：失衡的时间</a></li>
+                    <li class="toc-item"><a href="articles/1947-march-03.html">推理谜题</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1947-may.pdf">推理杂志 · 1947年5月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1947-may-01.html">埃勒里·奎因：多尾猫</a></li>
+                    <li class="toc-item"><a href="articles/1947-may-02.html">约翰·狄克森·卡尔：魔镜</a></li>
+                    <li class="toc-item"><a href="articles/1947-may-03.html">新书预告</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1947-july.pdf">推理杂志 · 1947年7月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1947-july-01.html">范·达因：圣甲虫杀人事件</a></li>
+                    <li class="toc-item"><a href="articles/1947-july-02.html">短篇：最后一封信</a></li>
+                    <li class="toc-item"><a href="articles/1947-july-03.html">作者访谈</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1947-sept.pdf">推理杂志 · 1947年9月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1947-sept-01.html">阿加莎·克里斯蒂：怪屋</a></li>
+                    <li class="toc-item"><a href="articles/1947-sept-02.html">G·K·切斯特顿：飞星宝剑</a></li>
+                    <li class="toc-item"><a href="articles/1947-sept-03.html">书评专栏</a></li>
+                </ul>
+            </div>
+
+            <div class="magazine-item">
+                <h3 class="magazine-title"><a href="magazines/1947-nov.pdf">推理杂志 · 1947年11月刊</a></h3>
+                <ul class="toc-list">
+                    <li class="toc-item"><a href="articles/1947-nov-01.html">埃勒里·奎因：双面莱特</a></li>
+                    <li class="toc-item"><a href="articles/1947-nov-02.html">约翰·狄克森·卡尔：燃烧之屋</a></li>
+                    <li class="toc-item"><a href="articles/1947-nov-03.html">读者调查</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
