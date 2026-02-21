@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif+SC:wght@400;700&family=Noto Serif+JP:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap');
 html, body {
 	margin: auto;
@@ -10,21 +11,16 @@ html {
 }
 body {
 	font-family: 
-        /* 英语字体 */
         Palatino,
         Vollkorn,
-        Times,
-        /* 中文字体 */
+		"URW Palladio L",
+        "Times New Roman",
+		"Libre Baskerville",
         "Source Han Serif CN",
 		"Noto Serif SC",
-		"Songti SC",
+		"Yu Mincho",
         "方正书宋",
         "SimSun",
-        /* 日语字体 */
-        "Noto Serif CJK JP",
-		"Noto Serif JP",
-        "Yu Mincho",
-		/* 最终回退 */
         serif;
 	color: #333;
 	line-height: 1.4;
