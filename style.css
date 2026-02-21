@@ -101,7 +101,7 @@ h4 + p, h4 + ul, h4 + ol {
     h1, h2, h3, h4 {
         text-align: left;
     }
-	h1:lang(en), h2:lang(en) {
+	h1[lang="en"], h2[lang="en"] {
 		font-size: 1.65em;
 	}
 	h1:first-child, h2:first-child {
