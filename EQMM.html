@@ -11,19 +11,6 @@
             margin: 0 auto;
             padding: 0 0 3rem;
         }
-        .archive-header {
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-        .archive-header h1,
-        .archive-header h2 {
-            margin: 1em 0 0.25rem;  
-        }
-        .archive-header .subtitle {
-            color: #666;
-            font-size: 0.9em;
-            margin: 0;
-        }
         .magazine-grid {
             display: grid;
             gap: 0.75rem;
@@ -33,9 +20,6 @@
             border: 1px solid #ddd;
             padding: 0.75rem 0.875rem;
             background: #fff;
-        }
-        .magazine-item:hover {
-            border-color: #999;
         }
         .magazine-title {
             font-size: 0.9em;
@@ -83,9 +67,6 @@
             .magazine-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
-            .archive-header .subtitle {
-                text-align: center;
-            }
         }
         @media (min-width: 1100px) {
             .magazine-grid {
@@ -97,21 +78,13 @@
                 grid-template-columns: repeat(5, 1fr);
             }
         }
-        @media (min-width: 2000px) {
-            .magazine-grid {
-                grid-template-columns: repeat(6, 1fr);
-            }
-        }
     </style>
     <base target="_blank">
 </head>
 
 <body>
     <div class="archive-container">
-        <header class="archive-header">
-            <h2 lang="en">Reviews of Ellery Queen's Mystery Magazine</h2>
-        </header>
-
+        <header><h2 lang="en">Reviews of Ellery Queen's Mystery Magazine</h2></header>
         <div class="magazine-grid">
             <div class="magazine-item">
                 <h3 class="magazine-title"><a href="./EQMM-1941">FALL 1941</a></h3>
