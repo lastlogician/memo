@@ -199,31 +199,37 @@ hr {
 	border-right: 0;
 }
 table {
-	margin-bottom: 1.333333rem
+	width: 100%;
+	font-size: 1.125rem;
+	margin-bottom: 1.333333rem;
+	border-collapse: collapse;
 }
-table th,
-table td {
-	padding: 8px;
-	line-height: 1.333333rem;
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td,
+table > tfoot > tr > th,
+table > tfoot > tr > td {
+	padding: 12px;
+	line-height: 1.2;
 	vertical-align: top;
-	border-top: 1px solid #ddd
+	border-top: 1px solid #333;
 }
-table th {
-	font-weight: bold
+table > thead > tr > th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #333;
 }
-table thead th {
-	vertical-align: bottom
+table > caption + thead > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > th,
+table > thead:first-child > tr:first-child > td {
+	border-top: 0;
 }
-table caption+thead tr:first-child th,
-table caption+thead tr:first-child td,
-table colgroup+thead tr:first-child th,
-table colgroup+thead tr:first-child td,
-table thead:first-child tr:first-child th,
-table thead:first-child tr:first-child td {
-	border-top: 0
-}
-table tbody+tbody {
-	border-top: 2px solid #ddd
+table > tbody > tr:first-child > th,
+table > tbody > tr:first-child > td {
+	border-top: 2px solid #333;
 }
 ruby {
 	ruby-align: center;
