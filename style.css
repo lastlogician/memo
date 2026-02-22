@@ -24,6 +24,8 @@ body {
 	color: #333;
 	line-height: 1.4;
 	text-align: justify;
+	text-justify: inter-ideograph;
+	word-break: break-all;
 	padding-bottom: 4.75rem;
 }
 @media screen and (max-width: 768px) {
@@ -110,6 +112,7 @@ h4 + p, h4 + ul, h4 + ol {
 }
 p, .mathjax-block {
 	margin-top: 0;
+	margin-bottom: 0.5em;
 	-webkit-hyphens: auto;  /* 旧版 Safari/Chrome */
     -moz-hyphens: auto;     /* 旧版 Firefox */
     hyphens: auto;          /* 标准语法 */
@@ -197,7 +200,7 @@ hr {
 }
 table {
 	width: 100%;
-	font-size: 1.125rem;
+	font-size: inherit;
 	margin-bottom: 1.333333rem;
 	border-collapse: collapse;
 }
@@ -227,6 +230,11 @@ table > thead:first-child > tr:first-child > td {
 table > tbody > tr:first-child > th,
 table > tbody > tr:first-child > td {
 	border-top: 2px solid #333;
+}
+figure.table-figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 ruby {
 	ruby-align: center;
