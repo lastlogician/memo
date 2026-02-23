@@ -242,6 +242,23 @@ figure.table-figure {
     margin: 0;
     padding: 0;
 }
+@media screen and (max-width: 768px) {
+    figure.table-figure {
+        margin: 0 -5%;
+        width: 110%;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+    
+    table {
+        font-size: 0.85em;
+    }
+    
+    table > thead > tr > th,
+    table > tbody > tr > td {
+        padding: 8px 6px;
+    }
+}
 ruby {
 	ruby-align: center;
 }
