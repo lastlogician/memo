@@ -12,6 +12,22 @@
   	font-stretch: 75% 125%;
   	font-style: italic;
 }
+@font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('fonts/texgyrepagella-bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('fonts/texgyrepagella-italic.otf') format('opentype');
+}
+@font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('fonts/texgyrepagella-regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'TeX Gyre Pagella';
+  src: url('fonts/texgyrepagella-bolditalic.otf') format('opentype');
+}
 html, body {
 	margin: auto;
 	background: #fefefe;
@@ -23,7 +39,8 @@ html {
 }
 body {
 	font-family: 
-        Vollkorn,
+        'TeX Gyre Pagella',
+		Vollkorn,
 		Palatino,
 		"URW Palladio L",
         "Times New Roman",
