@@ -1,4 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Vollkorn';
+    src: url('fonts/Vollkorn-VariableFont_wght.ttf') format('truetype');
+	font-weight: 125 950;
+  	font-stretch: 75% 125%;
+  	font-style: normal;
+}
+@font-face {
+    font-family: 'Vollkorn';
+    src: url('fonts/Vollkorn-Italic-VariableFont_wght.ttf') format('truetype');
+	font-weight: 125 950;
+  	font-stretch: 75% 125%;
+  	font-style: italic;
+}
 html, body {
 	margin: auto;
 	background: #fefefe;
