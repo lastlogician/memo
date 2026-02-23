@@ -25,6 +25,7 @@ body {
 	line-height: 1.4;
 	text-align: justify;
 	padding-bottom: 4.75rem;
+	text-justify: inter-ideograph;
 }
 @media screen and (max-width: 768px) {
 	html {
@@ -32,31 +33,31 @@ body {
 		width: 90%;
 	}
 }
-@media screen and (min-width: 768px) and (max-width: 970px) {
+@media screen and (min-width: 768px) {
 	html {
 		font-size: 19px;
 		width: 80%;
 	}
 }
-@media screen and (min-width: 971px) and (max-width: 1170px){
+@media screen and (min-width: 971px) {
 	html {
 		font-size: 20px;
 		width: 75%;
 	}
 }
-@media screen and (min-width: 1171px) and (max-width: 1290px){
+@media screen and (min-width: 1171px) {
 	html {
 		font-size: 20px;
 		width: 70%;
 	}
 }
-@media screen and (min-width: 1291px) and (max-width: 1400px){
+@media screen and (min-width: 1291px) {
 	html {
 		font-size: 20px;
 		width: 65%;
 	}
 }
-@media only screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
 	html {
 		font-size: 20px;
 		width: 60%;
@@ -111,9 +112,9 @@ h4 + p, h4 + ul, h4 + ol {
 p, .mathjax-block {
 	margin-top: 0;
 	margin-bottom: 0.5em;
-	-webkit-hyphens: auto;  /* 旧版 Safari/Chrome */
-    -moz-hyphens: auto;     /* 旧版 Firefox */
-    hyphens: auto;          /* 标准语法 */
+	-webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 ul {
 	list-style: square;
@@ -198,9 +199,11 @@ hr {
 }
 table {
 	width: 100%;
+	max-width: 100%;
 	font-size: inherit;
-	margin-bottom: 1.333333rem;
+	table-layout: fixed;
 	border-collapse: collapse;
+	margin-bottom: 1.333333rem;
 }
 table > thead > tr > th,
 table > thead > tr > td,
@@ -215,6 +218,7 @@ table > tfoot > tr > td {
 }
 table > thead > tr > th {
 	vertical-align: bottom;
+	text-align: left !important;
 	border-bottom: 2px solid #333;
 }
 table > caption + thead > tr:first-child > th,
@@ -229,6 +233,10 @@ table > tbody > tr:first-child > th,
 table > tbody > tr:first-child > td {
 	border-top: 2px solid #333;
 }
+table > tbody > tr > td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
 figure.table-figure {
     width: 100%;
     margin: 0;
@@ -241,7 +249,7 @@ ruby {
 	background: #333;
 	color: #fefefe;
 }
-::-moz-selection {  /* Firefox 兼容 */
+::-moz-selection {  
 	background: #333;
 	color: #fefefe;
 }
