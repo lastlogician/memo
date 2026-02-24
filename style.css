@@ -37,8 +37,8 @@
 	font-style: italic;
 }
 @font-face {
-    font-family: 'Noto Serif SC';
-    src: url('fonts/NotoSerifSC-VariableFont_wght.ttf');
+    font-family: 'Source Han Serif CN SD';
+    src: url('fonts/SourceHanSerif-CN-SD.woff2') format('woff2');
 	font-weight: 125 950;
   	font-stretch: 75% 125%;
 	font-display: swap;
@@ -59,7 +59,7 @@ body {
 		'Noto Serif CJK SC',
         'Source Han Serif CN',
 		'Noto Serif CJK',
-		'Noto Serif SC',
+		'Source Han Serif CN SD',
         serif;
 	color: #333;
 	line-height: 1.4;
