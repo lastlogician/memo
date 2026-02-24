@@ -201,12 +201,7 @@ blockquote {
 }
 code,
 pre {
-	font-family: 
-		"Consolas",
-		"Menlo",
-		"Monaco",
-		'Source Han Serif CN SD',
-		monospace;
+	font-family: "Consolas", "Menlo", "Monaco", 'Source Han Serif CN SD', monospace;
 	font-size: .9em;
 	background: white;
 }
