@@ -45,7 +45,7 @@
 @font-face {
     font-family: 'Noto Serif SC';
     src: url('fonts/NotoSerifSC-VariableFont_wght.woff2') format('woff2');
-	font-weight: 600;
+	font-weight: 200;
 	font-display: swap;
 }
 html, body {
