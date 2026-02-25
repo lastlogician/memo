@@ -290,7 +290,7 @@ figure.table-figure {
 }
 ruby {
 	ruby-align: center;
-	margin-bottom: 0.1em
+	margin-bottom: 0.1em;
 }
 ::selection {
 	background: #333;
