@@ -278,11 +278,9 @@ figure.table-figure {
         padding: 0 5%;
         box-sizing: border-box;
     }
-    
     table {
         font-size: 0.85em;
     }
-    
     table > thead > tr > th,
     table > tbody > tr > td {
         padding: 8px 6px;
@@ -290,7 +288,6 @@ figure.table-figure {
 }
 ruby {
 	ruby-align: center;
-	margin-bottom: 0.1em;
 }
 ::selection {
 	background: #333;
