@@ -105,13 +105,11 @@ h1 {
 	margin-bottom: 0.7em;
 	text-align: center;
     font-size:1.75em;
-	font-family: Vollkorn, Palatino, 'TeX Gyre Pagella', 'Source Han Serif CN SD', serif;
 }
 h2 {
 	margin-top:1.45em;
 	margin-bottom: 0.6em;
 	font-size: 1.6em;
-	font-family: Vollkorn, Palatino, 'TeX Gyre Pagella', 'Source Han Serif CN SD', serif;
 }
 h3 {
 	margin-top: 1.2em;
@@ -125,6 +123,7 @@ h4 {
 }
 h1, h2, h3, h4 {
     font-weight: 500;
+	font-family: Vollkorn, Palatino, 'TeX Gyre Pagella', 'Source Han Serif CN SD', serif;
 }
 h1+h2, h2+h3 {
 	margin-top: 0.83em;
