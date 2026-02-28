@@ -194,8 +194,7 @@ blockquote {
         padding-left: 0.8em;
     }
 }
-code,
-pre {
+code {
 	font-family: "Consolas", "Menlo", "Monaco", 'Source Han Serif CN SD', monospace;
 	font-size: .9em;
 	background: white;
