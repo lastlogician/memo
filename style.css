@@ -42,6 +42,12 @@
 	font-weight: 400;
 	font-style: normal;
 }
+@font-face {
+    font-family: 'Source Han Serif JP SO';
+    src: url('fonts/SourceHanSerif-JP-SO.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
 html, body {
 	margin: auto;
 	background: #fefefe;
@@ -52,7 +58,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	font-family: Palatino, 'TeX Gyre Pagella', 'Source Han Serif CN SD', serif;
+	font-family: Palatino, 'TeX Gyre Pagella', 'Source Han Serif CN SD', 'Source Han Serif JP SO', serif;
 	color: #333;
 	line-height: 1.4;
 	text-align: justify;
@@ -122,7 +128,6 @@ h4 {
 }
 h1, h2, h3, h4 {
     font-weight: 500;
-	font-family: Vollkorn, Palatino, 'TeX Gyre Pagella', 'Source Han Serif CN SD', serif;
 }
 h1+h2, h2+h3 {
 	margin-top: 0.83em;
