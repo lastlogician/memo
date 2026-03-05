@@ -1,30 +1,4 @@
 @font-face {
-    font-family: Vollkorn;
-    src: url('fonts/Vollkorn-VariableFont_wght.ttf');
-	font-weight: 125 950;
-  	font-stretch: 75% 125%;
-  	font-style: normal;
-}
-@font-face {
-    font-family: Vollkorn;
-    src: url('fonts/Vollkorn-Italic-VariableFont_wght.ttf');
-	font-weight: 125 950;
-  	font-stretch: 75% 125%;
-  	font-style: italic;
-}
-@font-face {
-  	font-family: 'TeX Gyre Pagella';
-  	src: url('fonts/texgyrepagella-bold.otf') format('opentype');
-	font-weight: 700;
-	font-style: normal;
-}
-@font-face {
-  	font-family: 'TeX Gyre Pagella';
-  	src: url('fonts/texgyrepagella-italic.otf') format('opentype');
-	font-weight: 400;
-	font-style: italic;
-}
-@font-face {
   	font-family: 'TeX Gyre Pagella';
   	src: url('fonts/texgyrepagella-regular.otf') format('opentype');
 	font-weight: 400;
@@ -32,9 +6,9 @@
 }
 @font-face {
   	font-family: 'TeX Gyre Pagella';
-  	src: url('fonts/texgyrepagella-bolditalic.otf') format('opentype');
+  	src: url('fonts/texgyrepagella-bold.otf') format('opentype');
 	font-weight: 700;
-	font-style: italic;
+	font-style: normal;
 }
 @font-face {
     font-family: 'Source Han Serif CN SD';
@@ -127,7 +101,7 @@ h4 {
 	font-size: 1.15em;
 }
 h1, h2, h3, h4 {
-    font-weight: 500;
+    font-weight: 600;
 }
 h1+h2, h2+h3 {
 	margin-top: 0.83em;
