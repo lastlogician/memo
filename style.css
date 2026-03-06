@@ -24,6 +24,7 @@
 	font-style: normal;
 	font-display: swap;
 }
+@import("https://chinese-fonts-cdn.deno.dev/packages/sypxzs/dist/思源屏显臻宋/result.css")
 html, body {
 	margin: auto;
 	background: #fefefe;
@@ -34,7 +35,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	font-family: Palatino, 'TeX Gyre Pagella', 'Source Han Serif CN SO', 'Source Han Serif JP SO', serif;
+	font-family: Palatino, 'TeX Gyre Pagella', 'Source Han Serif CN SO', 'Source Han Serif JP SO', 'Source Han Serif CN for Display', serif;
 	color: #333;
 	line-height: 1.4;
 	text-align: justify;
