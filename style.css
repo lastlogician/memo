@@ -35,7 +35,15 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	font-family: Palatino, 'TeX Gyre Pagella', 'Source Han Serif CN SO', 'Source Han Serif JP SO', 'Source Han Serif CN for Display', serif;
+	font-family:
+		Palatino,
+		'TeX Gyre Pagella',
+		'Source Han Serif CN SO',
+		'Source Han Serif JP SO',
+		'Source Han Serif CN for Display',
+		‘Source Han Serif’,
+		'Noto Serif',
+		serif;
 	color: #333;
 	line-height: 1.4;
 	text-align: justify;
