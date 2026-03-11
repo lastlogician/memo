@@ -154,17 +154,9 @@ ul li, ol li {
 li > ul, li > ol {
     margin-top: 0.4em;
 }
-@media screen and (max-width: 1170px) {
-	li > ul, li > ol, ul ul, ol ol, ul ol, ol ul {
-        padding-left: 0;
-        list-style: none;
-    }
-}
-@media screen and (min-width: 1171px) {
-    li > ul, ul ul {
-        padding-left: 1em;
-		list-style: square;
-    }
+li > ul, li > ol, ul ul, ol ol, ul ol, ol ul {
+    padding-left: 0;
+    list-style: none;
 }
 @media print {
 	ol {
