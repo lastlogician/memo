@@ -267,7 +267,7 @@ figure.table-figure {
 }
 ruby {
 	ruby-align: center;
-	line-height: 1;
+	line-height: 0.5;
 }
 ::selection {
 	background: #333;
