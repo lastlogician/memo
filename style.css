@@ -271,8 +271,8 @@ ruby {
 rt {
     vertical-align: super;
     margin-bottom: -0.3em;
-    font-size: 0.45em;
-    line-height: 1.2;
+    font-size: 0.55em;
+    line-height: 1;
 }
 ::selection {
 	background: #333;
