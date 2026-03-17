@@ -225,7 +225,7 @@ table thead th {
 	border-top: none;
 	vertical-align: bottom;
 	text-align: left !important;
-	border-bottom: 2px solid #333;
+	border-bottom: 1px solid #333;
 }
 table tbody tr:first-child th,
 table tbody tr:first-child td {
