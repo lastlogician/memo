@@ -32,6 +32,9 @@ html, body {
 }
 html {
 	scroll-behavior: smooth;
+	width: clamp(60%, 90vw, 90%);
+	font-size: clamp(19px, 1vw + 17px, 20px);
+	padding-inline: max(5%, (100% - 60rem) / 2);
 }
 body {
 	font-family:
@@ -48,42 +51,6 @@ body {
 	text-align: justify;
 	padding-bottom: 4.75rem;
 	text-justify: inter-ideograph;
-}
-@media screen and (max-width: 768px) {
-	html {
-		font-size: 19px;
-		width: 90%;
-	}
-}
-@media screen and (min-width: 768px) {
-	html {
-		font-size: 19px;
-		width: 80%;
-	}
-}
-@media screen and (min-width: 971px) {
-	html {
-		font-size: 20px;
-		width: 75%;
-	}
-}
-@media screen and (min-width: 1171px) {
-	html {
-		font-size: 20px;
-		width: 70%;
-	}
-}
-@media screen and (min-width: 1291px) {
-	html {
-		font-size: 20px;
-		width: 65%;
-	}
-}
-@media screen and (min-width: 1400px) {
-	html {
-		font-size: 20px;
-		width: 60%;
-	}
 }
 @media print {
 	html {
@@ -154,7 +121,7 @@ ul li, ol li {
 li > ul, li > ol {
     margin-top: 0.4em;
 }
-li > ul, li > ol, ul ul, ol ol, ul ol, ol ul {
+:is(ul, ol) :is(ul, ol) {
     padding-left: 0;
     list-style: none;
 }
