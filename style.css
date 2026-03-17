@@ -219,7 +219,7 @@ table td {
 	line-height: 1.2;
 	vertical-align: top;
 	border-bottom: none;
-	border-top: none;
+	border-top: 1px solid #333;
 }
 table thead th {
 	border-top: none;
