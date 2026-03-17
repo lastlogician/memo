@@ -219,7 +219,7 @@ table td {
 	line-height: 1.2;
 	vertical-align: top;
 	border-bottom: none;
-	border-top: 1px solid #333;
+	border-top: 0.8px solid #333;
 }
 table thead th {
 	border-top: none;
@@ -229,7 +229,7 @@ table thead th {
 }
 table tbody tr:first-child th,
 table tbody tr:first-child td {
-	border-top: 1px solid #333;
+	border-top: 0.8px solid #333;
 }
 table td {
 	word-wrap: break-word;
