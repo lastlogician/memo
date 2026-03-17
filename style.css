@@ -41,6 +41,7 @@ html {
 }
 @media screen and (min-width: 768px) {
 	html {
+		font-size: 19px;
 		width: 85%;
 	}
 }
