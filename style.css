@@ -200,10 +200,10 @@ hr {
 	color: #ddd;
 	height: 1px;
 	margin: 2em 0;
-	border-top: solid 1px #ddd;
-	border-bottom: none;
 	border-left: 0;
 	border-right: 0;
+	border-bottom: none;
+	border-top: solid 1px #ddd;
 }
 table {
 	width: 100%;
