@@ -32,9 +32,32 @@ html, body {
 }
 html {
 	scroll-behavior: smooth;
-	font-size: clamp(19px, 18px + 0.1vw, 20px);
-	padding-inline: max(5%, (100% - 60rem) / 2);
-	width: clamp(60%, 111.429vw - 154.286px, 90%);
+}
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 19px;
+		width: 90%;
+	}
+}
+@media screen and (min-width: 768px) {
+	html {
+		width: 85%;
+	}
+}
+@media screen and (min-width: 971px) {
+	html { width: 75%; }
+}
+@media screen and (min-width: 1171px) {
+	html { 
+		font-size: 20px;
+		width: 70%; 
+	}
+}
+@media screen and (min-width: 1291px) {
+	html { width: 65%; }
+}
+@media screen and (min-width: 1400px) {
+	html { width: 60%; } 
 }
 body {
 	font-family:
