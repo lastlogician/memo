@@ -32,9 +32,9 @@ html, body {
 }
 html {
 	scroll-behavior: smooth;
-	width: clamp(60%, 90vw, 90%);
 	font-size: clamp(19px, 1vw + 17px, 20px);
 	padding-inline: max(5%, (100% - 60rem) / 2);
+	width: clamp(60%, 111.429vw - 154.286px, 90%);
 }
 body {
 	font-family:
