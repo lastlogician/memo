@@ -55,6 +55,7 @@ body {
 @media print {
 	html {
 		font-size: 14px;
+		width: 100%; 
 	}
 }
 h1 {
@@ -79,6 +80,7 @@ h4 {
 }
 h1, h2, h3, h4 {
     font-weight: 500;
+	text-wrap: balance; 
 }
 h1+h2, h2+h3 {
 	margin-top: 0.83em;
@@ -157,6 +159,13 @@ a:hover {
 }
 a img {
 	border: none;
+}
+@media print {
+	a[href]::after {
+		content: " (" attr(href) ")";
+		font-size: 0.8em;
+		font-weight: normal;
+	}
 }
 h1 a,
 h1 a:hover {
