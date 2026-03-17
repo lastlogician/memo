@@ -265,9 +265,6 @@ figure.table-figure {
         padding: 8px 6px;
     }
 }
-ruby {
-	ruby-align: center;
-}
 rt {
     vertical-align: super;
     margin-bottom: -0.3em;
