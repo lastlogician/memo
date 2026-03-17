@@ -195,17 +195,17 @@ table td {
 	line-height: 1.2;
 	vertical-align: top;
 	border-bottom: none;
-	border-top: 1px solid #333;
+	border-top: none;
 }
 table thead th {
 	border-top: none;
 	vertical-align: bottom;
 	text-align: left !important;
-	border-bottom: 1px solid #333;
+	border-bottom: 2px solid #333;
 }
 table tbody tr:first-child th,
 table tbody tr:first-child td {
-	border-top: 2px solid #333;
+	border-top: 1px solid #333;
 }
 table td {
 	word-wrap: break-word;
