@@ -218,9 +218,11 @@ table td {
 	padding: 12px;
 	line-height: 1.2;
 	vertical-align: top;
+	border-bottom: none;
 	border-top: 1px solid #333;
 }
 table thead th {
+	border-top: none;
 	vertical-align: bottom;
 	text-align: left !important;
 	border-bottom: 2px solid #333;
