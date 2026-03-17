@@ -266,10 +266,12 @@ figure.table-figure {
     }
 }
 ruby {
+	ruby-align: center;
+}
+rt {
     vertical-align: super;
     margin-bottom: -0.3em;
-	ruby-align: center;
-	font-size: 0.45em;
+    font-size: 0.45em;
     line-height: 1.2;
 }
 ::selection {
