@@ -229,7 +229,7 @@ table thead th {
 }
 table tbody tr:first-child th,
 table tbody tr:first-child td {
-	border-top: 1px solid #333;
+	border-top: 2px solid #333;
 }
 table td {
 	word-wrap: break-word;
