@@ -213,37 +213,31 @@ table {
 	border-collapse: collapse;
 	margin-bottom: 1.333333rem;
 }
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td,
-table > tfoot > tr > th,
-table > tfoot > tr > td {
+table th,
+table td {
 	padding: 12px;
 	line-height: 1.2;
 	vertical-align: top;
 	border-top: 1px solid #333;
 }
-table > thead > tr > th {
+table thead th {
 	vertical-align: bottom;
 	text-align: left !important;
 	border-bottom: 2px solid #333;
 }
-table > caption + thead > tr:first-child > th,
-table > caption + thead > tr:first-child > td,
-table > colgroup + thead > tr:first-child > th,
-table > colgroup + thead > tr:first-child > td,
-table > thead:first-child > tr:first-child > th,
-table > thead:first-child > tr:first-child > td {
+table thead tr:first-child th,
+table thead tr:first-child td,
+table tbody tr:first-child th,
+table tbody tr:first-child td {
 	border-top: 0;
 }
-table > tbody > tr:first-child > th,
-table > tbody > tr:first-child > td {
+table tbody tr:first-child th,
+table tbody tr:first-child td {
 	border-top: 2px solid #333;
 }
-table > tbody > tr > td {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+table td {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
 figure.table-figure {
     width: 100%;
@@ -251,19 +245,19 @@ figure.table-figure {
     padding: 0;
 }
 @media screen and (max-width: 768px) {
-    figure.table-figure {
-        margin: 0 -5%;
-        width: 110%;
-        padding: 0 5%;
-        box-sizing: border-box;
-    }
-    table {
-        font-size: 0.85em;
-    }
-    table > thead > tr > th,
-    table > tbody > tr > td {
-        padding: 8px 6px;
-    }
+	figure.table-figure {
+		margin: 0 -5%;
+		width: 110%;
+		padding: 0 5%;
+		box-sizing: border-box;
+	}
+	table {
+		font-size: 0.85em;
+	}
+	table th,
+	table td {
+		padding: 8px 6px;
+	}
 }
 rt {
     vertical-align: super;
