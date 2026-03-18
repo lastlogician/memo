@@ -274,7 +274,7 @@ rt {
 }
 sub {
     vertical-align: sub;
-    font-size: 0.55em;
+    font-size: 0.6em;
     line-height: 0;
 }
 ::selection {
