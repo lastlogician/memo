@@ -174,7 +174,12 @@ blockquote {
     }
 }
 code {
-	font-family: 'Iosevka', 'Source Han Serif CN SO', monospace;
+	font-family:
+		'Iosevka',
+		'Maple Consolas',
+		'Source Han Serif CN SO',
+		'Consolas',
+		monospace;
 	font-size: .9em;
 	background: white;
 }
