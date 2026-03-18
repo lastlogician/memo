@@ -272,6 +272,11 @@ rt {
     font-size: 0.5em;
     line-height: 1;
 }
+sub {
+    vertical-align: sub;
+    font-size: 0.75em;
+    line-height: 0;
+}
 ::selection {
 	background: #333;
 	color: #fefefe;
