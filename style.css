@@ -31,10 +31,12 @@
 	font-style: normal;
 	font-display: swap;
 }
+:root{
+	color-scheme: light dark;
+}
 html, body {
 	margin: auto;
 	background: #fefefe;
-	color-scheme: light dark;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
