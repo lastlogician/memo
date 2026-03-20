@@ -34,12 +34,12 @@
 html, body {
 	margin: auto;
 	background: #fefefe;
+	color-scheme: light dark;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 html {
 	scroll-behavior: smooth;
-	color-scheme: dark light;
 }
 @media screen and (max-width: 768px) {
 	html {
