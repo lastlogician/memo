@@ -31,9 +31,6 @@
 	font-style: normal;
 	font-display: swap;
 }
-:root{
-	color-scheme: light dark;
-}
 html, body {
 	margin: auto;
 	background: #fefefe;
