@@ -186,6 +186,7 @@ code {
 	font-size: .9em;
 }
 a {
+	color: #000000;
 	color: light-dark(#000000, #ffffff);
 	font-weight: bold;
 	text-decoration: underline;
