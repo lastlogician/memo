@@ -17,9 +17,9 @@
             grid-template-columns: 1fr;
         }
         .magazine-item {
-            border: 1px solid #999;
+            border: 1px solid light-dark(#999, #555);
+            background: light-dark(#fff, #1a1a1a);
             padding: 0.75rem 0.875rem;
-            background: #fff;
         }
         .magazine-title {
             font-size: 0.9em;
@@ -28,11 +28,11 @@
             line-height: 1.3;
         }
         .magazine-title a {
-            color: #000;
+            color: light-dark(#000, #fff);
             text-decoration: underline;
         }
         .magazine-title a:hover {
-            color: #595959;
+            color: light-dark(#595959, #cccccc);
             text-decoration: underline;
         }
         .toc-list {
@@ -45,17 +45,17 @@
             font-size: 0.78em;
             line-height: 1.45;
             padding: 0.15rem 0;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px solid light-dark(#e0e0e0, #444);
         }
         .toc-item:last-child {
             border-bottom: none;
         }
         .toc-item a {
-            color: #444;
+            color: light-dark(#444, #bbbbbb);
             text-decoration: none;
         }
         .toc-item a:hover {
-            color: #000;
+            color: light-dark(#000, #fff);
             text-decoration: underline;
         }
         @media (min-width: 480px) {
