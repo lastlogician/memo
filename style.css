@@ -84,7 +84,7 @@ body {
 	text-align: justify;
 	padding-bottom: 4.75rem;
 	text-justify: inter-ideograph;
-	color: light-dark(#333, #f5f5f5);
+	color: light-dark(#333, #e8e8e8);
 }
 @media print {
 	html {
@@ -190,6 +190,9 @@ a {
 	color: light-dark(#000000, #ffffff);
 	font-weight: bold;
 	text-decoration: underline;
+}
+@media (prefers-color-scheme: dark) {
+    a { color: #ffffff;}
 }
 a:hover {
 	color: light-dark(#595959, #cccccc);
