@@ -31,6 +31,9 @@
 	font-style: normal;
 	font-display: swap;
 }
+:root {
+	color-scheme: light dark;
+}
 html, body {
 	margin: auto;
 	background: #fefefe;
@@ -77,11 +80,11 @@ body {
 		'Source Han Serif',
 		'Noto Serif',
 		serif;
-	color: #333;
 	line-height: 1.4;
 	text-align: justify;
 	padding-bottom: 4.75rem;
 	text-justify: inter-ideograph;
+	color: light-dark(#333, #f5f5f5)；
 }
 @media print {
 	html {
@@ -166,7 +169,7 @@ li > ul, li > ol {
 blockquote {
 	margin-left: 1em;
 	padding-left: 1em;
-	border-left: 1px solid #ddd;
+	border-left: 1px solid light-dark(#ddd, #444);
 }
 @media screen and (max-width: 1170px) {
     blockquote {
@@ -182,15 +185,14 @@ code {
 		'Consolas',
 		monospace;
 	font-size: .9em;
-	background: white;
 }
 a {
-	color: #000000;
+	color: light-dark(#000000, #ffffff)；
 	font-weight: bold;
 	text-decoration: underline;
 }
 a:hover {
-	color: #595959;
+	color: light-dark(#595959, #cccccc);
 	text-decoration: underline;
 }
 a img {
@@ -209,13 +211,13 @@ h1 a:hover {
 	text-decoration: none;
 }
 hr {
-	color: #ddd;
 	height: 1px;
 	margin: 2em 0;
 	border-left: 0;
 	border-right: 0;
 	border-bottom: none;
-	border-top: solid 1px #ddd;
+	color: light-dark(#ddd, #444);
+	border-top: solid 1px light-dark(#ddd, #444);
 }
 table {
 	width: 100%;
@@ -231,17 +233,17 @@ table td {
 	line-height: 1.2;
 	vertical-align: top;
 	border-bottom: none;
-	border-top: 0.8px solid #333;
+	border-top: 0.8px solid light-dark(#333, #888);
 }
 table thead th {
 	border-top: none;
 	vertical-align: bottom;
 	text-align: left !important;
-	border-bottom: 2px solid #333;
+	border-bottom: 2px solid light-dark(#333, #888);
 }
 table tbody tr:first-child th,
 table tbody tr:first-child td {
-	border-top: 0.8px solid #333;
+	border-top: 0.8px solid light-dark(#333, #888);
 }
 table td {
 	word-wrap: break-word;
@@ -279,6 +281,6 @@ sub {
     line-height: 0;
 }
 ::selection {
-	background: #333;
-	color: #fefefe;
+	color: light-dark(#fefefe, #0d0d0d);
+	background: light-dark(#333, #f0f0f0);
 }
