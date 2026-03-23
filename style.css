@@ -36,9 +36,9 @@
 }
 html, body {
 	margin: auto;
-	background: #fefefe;
-	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	background: light-dark(#fefefe, #0d0d0d);
 }
 html {
 	scroll-behavior: smooth;
