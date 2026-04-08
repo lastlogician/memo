@@ -165,6 +165,7 @@ ul li, ol li {
 }
 li > ul, li > ol {
     margin-top: 0.4em;
+	padding-left: 0;
 }
 :is(ul, ol) :is(ul, ol) {
     list-style: none;
