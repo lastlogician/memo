@@ -43,7 +43,7 @@ html, body {
 html {
 	scroll-behavior: smooth;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	html {
 		font-size: 19px;
 		width: 90%;
@@ -126,7 +126,6 @@ h1+h2, h2+h3 {
 }
 h3+h4 {
 	margin-top: 0.8em;
-	border-top: none;
 }
 h4 + p, h4 + ul, h4 + ol {
 	margin-top: 0.2em;
@@ -168,11 +167,6 @@ li > ul, li > ol {
 :is(ul, ol) :is(ul, ol) {
     padding-left: 0;
     list-style: none;
-}
-@media print {
-	ol {
-		padding-left: 40px;
-	}
 }
 blockquote {
 	margin-left: 1em;
