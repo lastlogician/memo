@@ -166,7 +166,6 @@ li > ul, li > ol {
     margin-top: 0.4em;
 }
 :is(ul, ol) :is(ul, ol) {
-    padding-left: 0;
     list-style: none;
 }
 blockquote {
@@ -188,6 +187,7 @@ code, pre {
 		'Consolas',
 		monospace;
 	font-size: .9em;
+	text-align: left !important;
 }
 a {
 	color: #000000;
