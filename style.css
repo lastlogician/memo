@@ -56,19 +56,25 @@ html {
 	}
 }
 @media screen and (min-width: 971px) {
-	html { width: 75%; }
+	html { width: 80%; }
 }
 @media screen and (min-width: 1171px) {
 	html { 
 		font-size: 20px;
-		width: 70%; 
+		width: 75%; 
 	}
 }
 @media screen and (min-width: 1291px) {
-	html { width: 65%; }
+	html { width: 70%; }
 }
 @media screen and (min-width: 1400px) {
-	html { width: 60%; } 
+	html { width: 65%; } 
+}
+@media screen and (min-width: 2000px) {
+	html {
+		font-size: 21px;
+		width: 60%;
+	} 
 }
 body {
 	font-family:
