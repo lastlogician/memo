@@ -179,7 +179,7 @@ blockquote {
         padding-left: 0.8em;
     }
 }
-code {
+code, pre {
 	font-family:
 		'Iosevka',
 		'Maple Mono',
@@ -187,6 +187,7 @@ code {
 		'Consolas',
 		monospace;
 	font-size: .9em;
+	text-align: left;
 }
 a {
 	color: #000000;
