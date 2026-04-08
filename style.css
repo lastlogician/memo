@@ -149,6 +149,9 @@ p, .mathjax-block {
     -moz-hyphens: auto;
     hyphens: auto;
 }
+ul, ol, li {
+	text-wrap: pretty;
+}
 ul {
 	list-style: square;
 	padding-left: 1.2em;
