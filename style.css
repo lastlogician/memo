@@ -114,7 +114,7 @@ p, .mathjax-block {
     hyphens: auto;
 }
 ul, ol, li {
-	content-visibility: auto;
+	/* content-visibility: auto; */
 }
 ul {
 	list-style: square;
