@@ -125,7 +125,7 @@ p, .mathjax-block {
     hyphens: auto;
 }
 ul {
-	list-style: circle;
+	list-style: disc;
 	padding-left: 1em;
 }
 ol {
