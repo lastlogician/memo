@@ -113,16 +113,16 @@ p, .mathjax-block {
     -moz-hyphens: auto;
     hyphens: auto;
 }
-ul, ol, li {
-	content-visibility: auto;
-	contain-intrinsic-size: 2em;
-}
 ul {
 	list-style: square;
 	padding-left: 1.2em;
 }
 ol {
 	padding-left: 1.2em;
+}
+li {
+	content-visibility: auto;
+	contain-intrinsic-size: 2em;
 }
 @media screen and (max-width: 1170px) {
     ul, ol {
