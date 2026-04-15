@@ -115,7 +115,7 @@ p, .mathjax-block {
 }
 ul, ol, li {
 	content-visibility: auto;
-	contain-intrinsic-size: 1.5em;
+	contain-intrinsic-size: 2em;
 }
 ul {
 	list-style: square;
