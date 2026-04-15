@@ -3,6 +3,7 @@
 }
 html, body {
 	margin: auto;
+	content-visibility: auto;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	background: light-dark(#fefefe, #0d0d0d);
