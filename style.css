@@ -66,8 +66,6 @@ body {
 	font-family:
 		Palatino,
 		'TeX Gyre Pagella',
-		'Source Han Serif CN SO',
-		'Source Han Serif JP SO',
 		'Source Han Serif CN for Display',
 		'Source Han Serif',
 		'Noto Serif',
@@ -171,8 +169,7 @@ code, pre {
 	font-family:
 		'Iosevka',
 		'Maple Mono',
-		'Source Han Serif CN SO',
-		'Consolas',
+		'Source Han Serif CN for Display',
 		monospace;
 	font-size: .9em;
 }
