@@ -45,12 +45,23 @@ html {
 }
 body {
 	font-family:
-		Palatino,
-		'TeX Gyre Pagella',
-		'Source Han Serif CN for Display',
-		'Source Han Serif',
-		'Noto Serif',
-		serif;
+		-apple-system, 
+		BlinkMacSystemFont, 
+		"Helvetica Neue", 
+		"Arial", 
+		"PingFang SC", 
+		"Hiragino Sans GB", 
+		"STHeiti", 
+		"Microsoft YaHei", 
+		"Microsoft JhengHei", 
+		"Source Han Sans SC", 
+		"Noto Sans CJK SC", 
+		"Source Han Sans CN", 
+		"Noto Sans SC", 
+		"Source Han Sans TC", 
+		"Noto Sans CJK TC", 
+		"WenQuanYi Micro Hei", 
+		sans-serif;
 	line-height: 1.4;
 	text-align: justify;
 	padding-bottom: 4.75rem;
