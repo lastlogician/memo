@@ -230,17 +230,6 @@ figure.table-figure {
 		padding: 8px 6px;
 	}
 }
-rt {
-    vertical-align: super;
-    margin-bottom: -0.3em;
-    font-size: 0.5em;
-    line-height: 1;
-}
-sub {
-    vertical-align: sub;
-    font-size: 0.6em;
-    line-height: 0;
-}
 ::selection {
 	color: light-dark(#fefefe, #0d0d0d);
 	background: light-dark(#333, #f0f0f0);
