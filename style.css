@@ -153,13 +153,6 @@ a:hover {
 a img {
 	border: none;
 }
-@media print {
-	a[href]::after {
-		content: " (" attr(href) ")";
-		font-size: 0.8em;
-		font-weight: normal;
-	}
-}
 hr {
 	height: 1px;
 	margin: 2em 0;
