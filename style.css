@@ -45,22 +45,13 @@ html {
 }
 body {
 	font-family:
-		-apple-system, 
-		BlinkMacSystemFont, 
-		"Helvetica Neue", 
-		"Arial", 
-		"PingFang SC", 
-		"Hiragino Sans GB", 
-		"STHeiti", 
-		"Microsoft YaHei", 
-		"Microsoft JhengHei", 
-		"Source Han Sans SC", 
-		"Noto Sans CJK SC", 
-		"Source Han Sans CN", 
-		"Noto Sans SC", 
-		"Source Han Sans TC", 
-		"Noto Sans CJK TC", 
-		"WenQuanYi Micro Hei", 
+		'SF Pro SC', 
+		'Helvetica Neue', 
+		'PingFang SC', 
+		'Microsoft YaHei',
+		'Noto Sans CJK SC',
+		'Source Han Sans SC', 
+		'WenQuanYi Micro Hei', 
 		sans-serif;
 	line-height: 1.4;
 	text-align: justify;
