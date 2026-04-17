@@ -164,15 +164,15 @@ table {
 	padding: 12px;
 	line-height: 1.2;
 	vertical-align: top;
-	border-top: 0.8px solid light-dark(#333, #888);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
+	border-top: 0.8px solid light-dark(#333, #888);
 }
 thead th {
 	border-top: none;
-	border-bottom: 2px solid light-dark(#333, #888);
 	text-align: left;
 	vertical-align: bottom;
+	border-bottom: 2px solid light-dark(#333, #888);
 }
 figure.table-figure {
 	margin: 0;
