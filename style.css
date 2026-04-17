@@ -90,7 +90,7 @@ p {
     hyphens: auto;
 }
 ul {
-	list-style: disc;
+	list-style: none;
 	padding-left: 0;
 }
 ol {
@@ -106,10 +106,9 @@ li > ul, li > ol {
     list-style: none;
 	padding-left: 0;
 }
-@media screen and (max-width: 768px) {
-    ul, ol {
-		list-style: none;
-	}
+@media screen and (min-width: 768px) {
+    ul, ol { list-style: disc; }
+	li { text-wrap: balance; }
 }
 blockquote {
 	margin-left: 1em;
