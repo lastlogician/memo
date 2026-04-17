@@ -156,52 +156,37 @@ hr {
 table {
 	width: 100%;
 	max-width: 100%;
-	font-size: inherit;
 	table-layout: fixed;
 	border-collapse: collapse;
 	margin-bottom: 1.333333rem;
 }
-table th,
-table td {
+:is(th, td) {
 	padding: 12px;
 	line-height: 1.2;
 	vertical-align: top;
-	border-bottom: none;
 	border-top: 0.8px solid light-dark(#333, #888);
-}
-table thead th {
-	border-top: none;
-	vertical-align: bottom;
-	text-align: left !important;
-	border-bottom: 2px solid light-dark(#333, #888);
-}
-table tbody tr:first-child th,
-table tbody tr:first-child td {
-	border-top: 0.8px solid light-dark(#333, #888);
-}
-table td {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 }
+thead th {
+	border-top: none;
+	border-bottom: 2px solid light-dark(#333, #888);
+	text-align: left;
+	vertical-align: bottom;
+}
 figure.table-figure {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	width: 100%;
 }
 @media screen and (max-width: 768px) {
 	figure.table-figure {
-		margin: 0 -5%;
 		width: 110%;
+		margin: 0 -5%;
 		padding: 0 5%;
 		box-sizing: border-box;
 	}
-	table {
-		font-size: 0.85em;
-	}
-	table th,
-	table td {
-		padding: 8px 6px;
-	}
+	table { font-size: 0.85em; }
+	:is(th, td) { padding: 8px 6px; }
 }
 ::selection {
 	color: light-dark(#fefefe, #0d0d0d);
