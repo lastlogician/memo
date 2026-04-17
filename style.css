@@ -108,7 +108,7 @@ li > ul, li > ol {
 }
 @media screen and (min-width: 768px) {
     ul, ol { list-style: disc; }
-	li { text-wrap: balance; }
+	li { text-align: left; text-wrap: balance; }
 }
 blockquote {
 	margin-left: 1em;
