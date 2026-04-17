@@ -166,11 +166,6 @@ a img {
 		font-weight: normal;
 	}
 }
-h1 a,
-h1 a:hover {
-	color: light-dark(#595959, #b0b0b0);
-	text-decoration: none;
-}
 hr {
 	height: 1px;
 	margin: 2em 0;
