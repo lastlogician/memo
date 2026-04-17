@@ -106,7 +106,7 @@ li > ul, li > ol {
     list-style: none;
 	padding-left: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
     ul, ol { list-style: disc; }
 	li { text-wrap: pretty; }
 }
