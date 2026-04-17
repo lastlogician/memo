@@ -68,12 +68,6 @@ body {
 	text-justify: inter-ideograph;
 	color: light-dark(#333, #e8e8e8);
 }
-@media print {
-	html {
-		font-size: 14px;
-		width: 100%; 
-	}
-}
 h1 {
 	margin-top: 1.2em;
 	margin-bottom: 0.7em;
@@ -99,7 +93,7 @@ h1+h2, h2+h3 {
 h3 + p, h3 + ul, h3 + ol {
 	margin-top: 0.2em;
 }
-p, .mathjax-block {
+p {
 	margin-top: 0;
 	margin-bottom: 0.5em;
 	-webkit-hyphens: auto;
