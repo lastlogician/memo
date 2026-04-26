@@ -61,7 +61,7 @@ body {
 	color: light-dark(#333, #e8e8e8);
 }
 h1, h2, h3 {
-    font-weight: bold;
+    font-weight: 500;
 	text-align: left;
 	margin-top: 1.2em;
 }
