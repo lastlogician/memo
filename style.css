@@ -32,15 +32,15 @@ html {
 	}
 }
 @media screen and (min-width: 1291px) {
-	html { width: 67%; }
+	html { width: 65%; }
 }
 @media screen and (min-width: 1400px) {
-	html { width: 60%; } 
+	html { width: 55%; } 
 }
 @media screen and (min-width: 2000px) {
 	html {
 		font-size: 21px;
-		width: 55%;
+		width: 50%;
 	} 
 }
 body {
