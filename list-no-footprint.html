@@ -30,30 +30,16 @@
       'Noto Sans CJK SC',
       'Source Han Sans SC',
       'WenQuanYi Micro Hei', 
-       sans-serif;
-       line-height: 1.4;
-       padding-bottom: 4.75rem;
-       color: light-dark(#333, #e8e8e8);
+      sans-serif;
+      line-height: 1.4;
+      padding-bottom: 4.75rem;
+      color: light-dark(#333, #e8e8e8);
   }
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  ol {
-    padding-left: 0;
-  }
-  ul li, ol li {
-    margin-bottom: 0.3em;
-  }
-  li > ul, li > ol {
-    margin-top: 0.4em;
-  }
-  :is(ul, ol) :is(ul, ol) {
-    list-style: none;
-    padding-left: 0;
-  }
-  @media screen and (min-width: 640px) {
-    ul, ol { list-style: disc; }
+  ul, ol { padding-left: 0; }
+  li { margin-bottom: 0.3em; }
+  li > :is(ul, ol) { margin-top: 0.4em; }
+  @media screen and (max-width: 640px) {
+    ul, ol, li { list-style: none; }
   }
   code, pre {
     font-family: 'Monaco', 'Consolas', monospace;
