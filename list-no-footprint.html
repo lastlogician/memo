@@ -15,27 +15,13 @@
     font-size: clamp(18px, 18px + 0.12vw, 24px);
   }
   body {
-    font-family:
-    'SF Pro Text', 
-    'Helvetica Neue',
-    'Noto Sans',
-    'Arial',
-    'PingFang SC', 
-    'Microsoft YaHei',
-    'Hiragino Sans GB',
-    'Noto Sans CJK SC',
-    'Source Han Sans SC',
-    'WenQuanYi Micro Hei', 
-    sans-serif;
+    font-family: 'SF Pro Text', 'Helvetica Neue', 'Noto Sans', 'Arial', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans GB', 'Noto Sans CJK SC', 'Source Han Sans SC', 'WenQuanYi Micro Hei', sans-serif;
     line-height: 1.4;
     padding-bottom: 4.75rem;
   }
-  ul, ol { padding-left: 0; }
+  ul, ol { padding-left: 0; list-style: none; }
   li { margin-bottom: 0.3em; }
   li > :is(ul, ol) { margin-top: 0.4em; list-style: none; }
-  @media screen and (max-width: 640px) {
-    ul, ol { list-style: none; }
-  }
   code, pre {
     font-family: 'Monaco', 'Consolas', monospace;
     font-size: .9em;
